@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Houses</title>
+</head>
+<body>
+    <h1>Houses for Sale</h1>
+    {% for house in houses %}
+    <div>
+        <h2>{{ house.title }}</h2>
+        <p>{{ house.description }}</p>
+        <p>Price: ${{ house.price }}</p>
+        <p>Address: {{ house.address }}</p>
+    </div>
+    {% endfor %}
+    <a href="{% url 'nincsugynok_app:homepage' %}">Back to Home</a>
+</body>
+</html>

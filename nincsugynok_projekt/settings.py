@@ -24,7 +24,10 @@ SECRET_KEY = 'django-insecure-7gb@z-bed9q0)l@p&cgxd0#3pvq#&6%pcaa7qbsw+dgb7fr-jn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nincsugynokbackend-env.eba-tpxptp52.eu-central-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = [
+    'nincsugynokbackend-env.eba-tpxptp52.eu-central-1.elasticbeanstalk.com',
+    "backend.dataqbe.hu"
+]
 
 # Application definition
 
@@ -102,8 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://frontend.d49nwkbw78j54.amplifyapp.com/",
-    "backend.dataqbe.hu"
+    "https://frontend.d49nwkbw78j54.amplifyapp.com/"
 ]
 
 # Internationalization

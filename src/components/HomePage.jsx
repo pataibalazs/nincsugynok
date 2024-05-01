@@ -7,7 +7,7 @@ function HomePage() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://nincsugynokbackend-env.eba-tpxptp52.eu-central-1.elasticbeanstalk.com/api/houses/')
+    fetch('https://backend.dataqbe.hu/api/houses/')
       .then(response => response.json())
       .then(data => setItems(data))
       .catch(err => {
